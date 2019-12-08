@@ -10,15 +10,27 @@
     <Filter Include="Sources">
       <UniqueIdentifier>{0760867f-335a-4b16-a970-9ea01f4f428d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Headers\Utils">
+      <UniqueIdentifier>{c9accda1-53ea-4e3e-8037-27ba3946113e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Utils">
+      <UniqueIdentifier>{8753d0eb-e19b-463e-ba26-5ae4096b1fbe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\config.h">
       <Filter>Headers</Filter>
     </ClInclude>
+    <ClInclude Include="include\Utils\Logger.h">
+      <Filter>Headers\Utils</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
       <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\Logger.cpp">
+      <Filter>Sources\Utils</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
