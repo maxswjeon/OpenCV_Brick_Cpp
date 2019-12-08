@@ -22,6 +22,12 @@
     <Filter Include="Sources\Threads">
       <UniqueIdentifier>{4f593fa6-bb81-4dc9-98c0-ce20aadd8764}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Headers\Windows">
+      <UniqueIdentifier>{a37c55e8-6adb-4c92-9df6-8ee6e69b29f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Windows">
+      <UniqueIdentifier>{a929e7d4-1289-4d93-889c-67f27e200e88}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\config.h">
@@ -39,6 +45,9 @@
     <ClInclude Include="include\Threads\Webcam.h">
       <Filter>Headers\Threads</Filter>
     </ClInclude>
+    <ClInclude Include="include\Windows\Window.h">
+      <Filter>Headers\Windows</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -55,6 +64,9 @@
     </ClCompile>
     <ClCompile Include="src\Threads\Webcam.cpp">
       <Filter>Sources\Threads</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Windows\Window.cpp">
+      <Filter>Sources\Windows</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

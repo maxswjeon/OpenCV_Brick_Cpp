@@ -24,6 +24,7 @@
     <ClInclude Include="include\Threads\Thread.h" />
     <ClInclude Include="include\Threads\Webcam.h" />
     <ClInclude Include="include\Utils\Logger.h" />
+    <ClInclude Include="include\Windows\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Game.cpp" />
@@ -31,6 +32,7 @@
     <ClCompile Include="src\Threads\Thread.cpp" />
     <ClCompile Include="src\Threads\Webcam.cpp" />
     <ClCompile Include="src\Utils\Logger.cpp" />
+    <ClCompile Include="src\Windows\Window.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
