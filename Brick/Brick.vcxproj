@@ -20,9 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\config.h" />
+    <ClInclude Include="include\Game.h" />
     <ClInclude Include="include\Utils\Logger.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Utils\Logger.cpp" />
   </ItemGroup>
