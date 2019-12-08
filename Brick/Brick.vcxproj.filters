@@ -16,6 +16,12 @@
     <Filter Include="Sources\Utils">
       <UniqueIdentifier>{8753d0eb-e19b-463e-ba26-5ae4096b1fbe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Headers\Threads">
+      <UniqueIdentifier>{982b34ed-97db-4961-940c-ac972c89f74e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Threads">
+      <UniqueIdentifier>{4f593fa6-bb81-4dc9-98c0-ce20aadd8764}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\config.h">
@@ -27,6 +33,9 @@
     <ClInclude Include="include\Game.h">
       <Filter>Headers</Filter>
     </ClInclude>
+    <ClInclude Include="include\Threads\Thread.h">
+      <Filter>Sources\Threads</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -37,6 +46,9 @@
     </ClCompile>
     <ClCompile Include="src\Game.cpp">
       <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Threads\Thread.cpp">
+      <Filter>Sources\Threads</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
