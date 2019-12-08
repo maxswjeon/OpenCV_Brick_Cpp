@@ -34,7 +34,10 @@
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="include\Threads\Thread.h">
-      <Filter>Sources\Threads</Filter>
+      <Filter>Headers\Threads</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Threads\Webcam.h">
+      <Filter>Headers\Threads</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -48,6 +51,9 @@
       <Filter>Sources</Filter>
     </ClCompile>
     <ClCompile Include="src\Threads\Thread.cpp">
+      <Filter>Sources\Threads</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Threads\Webcam.cpp">
       <Filter>Sources\Threads</Filter>
     </ClCompile>
   </ItemGroup>
