@@ -19,5 +19,5 @@ void Thread::start()
 void Thread::stop()
 {
 	_status = ThreadStatus::STOPPING;
-	while (_status != ThreadStatus::STOPPED);
+	_thread.join();
 }

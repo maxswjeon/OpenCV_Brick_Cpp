@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph DataVirtualized="True" Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 @3 Member=(Name=__empty_global_delete OverloadingParameters=[(Type=&quot;void *&quot;),(Type=&quot;unsigned __int64&quot;)]))" Category="CodeSchema_Method" Bounds="228.03,412.88,158.03,25.96" DelayedCrossGroupLinksState="Fetched" Label="__empty_global_delete" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="(@1 @3 Member=(Name=__empty_global_delete OverloadingParameters=[(Type=&quot;void *&quot;)]))" Category="CodeSchema_Method" Bounds="40,412.88,158.03,25.96" DelayedCrossGroupLinksState="Fetched" Label="__empty_global_delete" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="(@1 @6 Type=&quot;_Func_base&lt;void,cv::Mat &amp; __ptr64&gt;&quot;)" Category="CodeSchema_Class" Bounds="-772.301939383334,160.922164987623,259.903333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Func_base‎&lt;void‎,cv‎::Mat &amp; __ptr64‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=&quot;tuple&lt;std::_Ph&lt;1&gt; &gt;&quot;)" Category="CodeSchema_Class" Bounds="-772.301939383334,-4.07783501237711,173.826666666667,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="tuple‎&lt;std‎::_Ph‎&lt;1‎&gt; ‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=&quot;tuple&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &amp;&amp; __ptr64&gt;&quot;)" Category="CodeSchema_Class" Bounds="-772.301939383334,655.922164987623,532.213333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="tuple‎&lt;std‎::basic_string‎&lt;char‎,std‎::char_traits‎&lt;char‎&gt;‎,std‎::allocator‎&lt;char‎&gt; ‎&gt; &amp;&amp; __ptr64‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::Feature2D&gt;)" Category="CodeSchema_Class" Bounds="-568.475272716667,-4.07783501237711,200.706666666667,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::Feature2D‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::WarperCreator&gt;)" Category="CodeSchema_Class" Bounds="-86.2752727166669,-4.07783501237711,224.996666666667,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::WarperCreator‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::cuda::Event::Impl&gt;)" Category="CodeSchema_Class" Bounds="-254.965272716667,50.9221649876229,235.193333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::cuda‎::Event‎::Impl‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::cuda::GpuMat::Allocator&gt;)" Category="CodeSchema_Class" Bounds="-772.301939383334,270.922164987623,274.106666666667,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::cuda‎::GpuMat‎::Allocator‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::cuda::Stream::Impl&gt;)" Category="CodeSchema_Class" Bounds="10.2280606166667,50.9221649876229,243.763333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::cuda‎::Stream‎::Impl‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::AffineWarper&gt;)" Category="CodeSchema_Class" Bounds="-219.021939383333,105.922164987623,251.893333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::AffineWarper‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::Blender&gt;)" Category="CodeSchema_Class" Bounds="-337.76860605,-4.07783501237711,221.493333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::Blender‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::BundleAdjusterBase&gt;)" Category="CodeSchema_Class" Bounds="-772.301939383334,380.922164987623,287.64,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::BundleAdjusterBase‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::CompressedRectilinearPortraitWarper&gt;)" Category="CodeSchema_Class" Bounds="-17.0819393833337,600.922164987623,383.616666666667,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::CompressedRectilinearPortraitWarper‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::CompressedRectilinearWarper&gt;)" Category="CodeSchema_Class" Bounds="-772.301939383334,600.922164987623,343.623333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::CompressedRectilinearWarper‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::CylindricalWarper&gt;)" Category="CodeSchema_Class" Bounds="-163.521939383334,270.922164987623,275.746666666667,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::CylindricalWarper‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::CylindricalWarperGpu&gt;)" Category="CodeSchema_Class" Bounds="-772.301939383334,490.922164987623,298.31,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::CylindricalWarperGpu‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::Estimator&gt;)" Category="CodeSchema_Class" Bounds="-516.115272716667,50.9221649876229,231.15,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::Estimator‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::ExposureCompensator&gt;)" Category="CodeSchema_Class" Bounds="-443.991939383333,490.922164987623,302.206666666667,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::ExposureCompensator‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::FeaturesMatcher&gt;)" Category="CodeSchema_Class" Bounds="-473.061939383334,215.922164987623,270.533333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::FeaturesMatcher‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::FisheyeWarper&gt;)" Category="CodeSchema_Class" Bounds="-482.39860605,160.922164987623,259.923333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::FisheyeWarper‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::MercatorWarper&gt;)" Category="CodeSchema_Class" Bounds="-772.301939383334,215.922164987623,269.24,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::MercatorWarper‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::PaniniPortraitWarper&gt;)" Category="CodeSchema_Class" Bounds="-132.858606050001,380.922164987623,292.95,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::PaniniPortraitWarper‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::PaniniWarper&gt;)" Category="CodeSchema_Class" Bounds="62.8713939500003,105.922164987623,252.956666666667,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::PaniniWarper‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::PlaneWarper&gt;)" Category="CodeSchema_Class" Bounds="-498.511939383333,105.922164987623,249.49,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::PlaneWarper‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::PlaneWarperGpu&gt;)" Category="CodeSchema_Class" Bounds="-172.52860605,215.922164987623,272.053333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::PlaneWarperGpu‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::SeamFinder&gt;)" Category="CodeSchema_Class" Bounds="-772.301939383334,105.922164987623,243.79,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::SeamFinder‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::SphericalWarper&gt;)" Category="CodeSchema_Class" Bounds="-192.475272716667,160.922164987623,269.24,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::SphericalWarper‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::SphericalWarperGpu&gt;)" Category="CodeSchema_Class" Bounds="-454.661939383334,380.922164987623,291.803333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::SphericalWarperGpu‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::StereographicWarper&gt;)" Category="CodeSchema_Class" Bounds="-123.968606050001,435.922164987623,295.503333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::StereographicWarper‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::detail::TransverseMercatorWarper&gt;)" Category="CodeSchema_Class" Bounds="-111.785272716666,490.922164987623,326.393333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::detail‎::TransverseMercatorWarper‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::videostab::DeblurerBase&gt;)" Category="CodeSchema_Class" Bounds="-468.195272716667,270.922164987623,274.673333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::videostab‎::DeblurerBase‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::videostab::IDenseOptFlowEstimator&gt;)" Category="CodeSchema_Class" Bounds="-411.881939383333,545.922164987623,336.05,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::videostab‎::IDenseOptFlowEstimator‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::videostab::IFrameSource&gt;)" Category="CodeSchema_Class" Bounds="-466.34860605,325.922164987623,276.446666666667,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::videostab‎::IFrameSource‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::videostab::ILog&gt;)" Category="CodeSchema_Class" Bounds="-772.301939383334,50.9221649876229,226.186666666666,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::videostab‎::ILog‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::videostab::IMotionStabilizer&gt;)" Category="CodeSchema_Class" Bounds="-448.561939383334,435.922164987623,294.593333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::videostab‎::IMotionStabilizer‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::videostab::IOutlierRejector&gt;)" Category="CodeSchema_Class" Bounds="-159.901939383333,325.922164987623,287.303333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::videostab‎::IOutlierRejector‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::videostab::ISparseOptFlowEstimator&gt;)" Category="CodeSchema_Class" Bounds="-45.8319393833333,545.922164987623,338.29,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::videostab‎::ISparseOptFlowEstimator‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::videostab::ImageMotionEstimatorBase&gt;)" Category="CodeSchema_Class" Bounds="-398.67860605,600.922164987623,351.596666666667,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::videostab‎::ImageMotionEstimatorBase‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::videostab::InpainterBase&gt;)" Category="CodeSchema_Class" Bounds="-772.301939383334,325.922164987623,275.953333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::videostab‎::InpainterBase‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::videostab::MotionFilterBase&gt;)" Category="CodeSchema_Class" Bounds="-772.301939383334,435.922164987623,293.74,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::videostab‎::MotionFilterBase‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 @6 Type=_Ptr_base&lt;cv::videostab::WobbleSuppressorBase&gt;)" Category="CodeSchema_Class" Bounds="-772.301939383334,545.922164987623,330.42,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="_Ptr_base‎&lt;cv‎::videostab‎::WobbleSuppressorBase‎&gt;" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="(@1 Namespace=cv Member=(Name=SDL_MatToTexture OverloadingParameters=[(Type=&quot;cv::Mat const &amp;&quot;),(Type=&quot;SDL_Texture *&quot;)]))" Category="CodeSchema_Method" Bounds="40,528.84,137.11,25.96" DelayedCrossGroupLinksState="Fetched" Label="SDL_MatToTexture" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="@10" Category="CodeSchema_Class" Bounds="285.678333333333,135.96,92.6433333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="Game" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="@11" Category="CodeSchema_Enum" Bounds="301.816666666667,356.92,86.3666666666667,25.96" DelayedCrossGroupLinksState="Fetched" Label="LogColor" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="@12" Category="CodeSchema_Class" Bounds="411.468333333333,301.92,99.0633333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="Logger" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="@13" Category="CodeSchema_Enum" Bounds="418.71,356.92,84.58,25.96" DelayedCrossGroupLinksState="Fetched" Label="LogLevel" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="@14" Category="CodeSchema_Class" Bounds="265.641666666667,190.96,132.716666666667,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="MainWindow" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="@15" Category="CodeSchema_Class" Bounds="72.095,190.96,131.81,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="StatsWindow" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="@16" Category="CodeSchema_Class" Bounds="620.708333333333,135,98.4766666666667,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="Thread" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="@17" Category="CodeSchema_Enum" Bounds="616.126666666667,190,107.64,25.96" DelayedCrossGroupLinksState="Fetched" Label="ThreadStatus" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="@18" Category="CodeSchema_Class" Bounds="615.673333333333,80,108.546666666667,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="Webcam" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="@19" Category="CodeSchema_Class" Bounds="182.208333333333,246.44,105.583333333333,25" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Label="Window" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="@2" Category="CodeSchema_Assembly" Bounds="0,0,764.22,594.8" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="NotFetched" FetchedChildrenCount="3" FilePath="$(beeb4e06-8a76-4aa8-b390-dae189580b24.OutputPath)" Group="Expanded" Label="Brick.exe" />
+    <Node Id="@4" Category="CodeSchema_Namespace" Bounds="20,40,724.22,418.84" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="14" Group="Expanded" Label="‎::" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="@5" Category="CodeSchema_Namespace" Bounds="20,488.84,177.11,85.96" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="1" Group="Expanded" Label="cv" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="@7" Category="CodeSchema_Namespace" Bounds="227.11,488.84,73.5566666666666,25" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="40" Group="Collapsed" Label="std" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="@8" Category="CodeSchema_Method" Bounds="492.326666666667,245.96,93.3466666666666,25.96" DelayedCrossGroupLinksState="Fetched" Label="init_logger" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+    <Node Id="@9" Category="CodeSchema_Method" Bounds="416.658333333333,80,88.6833333333334,25.96" DelayedCrossGroupLinksState="Fetched" Label="SDL_main" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" />
+  </Nodes>
+  <Links>
+    <Link Source="@10" Target="@12" Category="References" Bounds="354.045440673828,160.960006713867,100.855773925781,132.312423706055" IsSourceVirtualized="True" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" Weight="1" />
+    <Link Source="@10" Target="@14" Category="References" Bounds="332,160.960006713867,0,21" IsSourceVirtualized="True" IsTargetVirtualized="True" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" Weight="6">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@10" Target="@15" Category="References" Bounds="190.749664306641,160.6591796875,98.2205200195313,27.8460235595703" IsSourceVirtualized="True" IsTargetVirtualized="True" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" Weight="6">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@10" Target="@19" Category="References" Bounds="235,160.960006713867,74.9545593261719,76.4799957275391" IsSourceVirtualized="True" IsTargetVirtualized="True" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" Weight="9">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@12" Target="@11" Category="References" Bounds="380.25830078125,326.920013427734,54.6061401367188,26.1167907714844" IsSourceVirtualized="True" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" Weight="2" />
+    <Link Source="@12" Target="@13" Category="References" Bounds="461,326.920013427734,0,21" IsSourceVirtualized="True" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" Weight="6" />
+    <Link Source="@14" Target="@19" Category="References" Bounds="264.667114257813,215.960006713867,45.4781494140625,26.0116271972656" IsSourceVirtualized="True" IsTargetVirtualized="True" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" Weight="6">
+      <Category Ref="CodeSchema_BasedOn" />
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@15" Target="@19" Category="References" Bounds="159.854721069336,215.960006713867,45.4781494140625,26.0116271972656" IsSourceVirtualized="True" IsTargetVirtualized="True" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" Weight="9">
+      <Category Ref="CodeSchema_BasedOn" />
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@16" Target="@17" Category="References" Bounds="669.946655273438,160,0,21" IsSourceVirtualized="True" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" Weight="1" />
+    <Link Source="@18" Target="@16" Category="CodeSchema_Calls" Bounds="669.946655273438,105,0,21" IsSourceVirtualized="True" IsTargetVirtualized="True" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" Weight="4">
+      <Category Ref="CodeSchema_BasedOn" />
+    </Link>
+    <Link Source="@19" Target="@12" Category="References" Bounds="284.576843261719,271.110443115234,120.325988769531,29.5384521484375" IsSourceVirtualized="True" IsTargetVirtualized="True" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" Weight="6">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@2" Target="@4" Category="Contains" FetchingParent="@2" />
+    <Link Source="@2" Target="@5" Category="Contains" FetchingParent="@2" />
+    <Link Source="@2" Target="@7" Category="Contains" FetchingParent="@2" />
+    <Link Source="@4" Target="(@1 @3 Member=(Name=__empty_global_delete OverloadingParameters=[(Type=&quot;void *&quot;),(Type=&quot;unsigned __int64&quot;)]))" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="(@1 @3 Member=(Name=__empty_global_delete OverloadingParameters=[(Type=&quot;void *&quot;)]))" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@10" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@11" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@12" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@13" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@14" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@15" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@16" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@17" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@18" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@19" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@8" Category="Contains" FetchingParent="@4" />
+    <Link Source="@4" Target="@9" Category="Contains" FetchingParent="@4" />
+    <Link Source="@5" Target="(@1 Namespace=cv Member=(Name=SDL_MatToTexture OverloadingParameters=[(Type=&quot;cv::Mat const &amp;&quot;),(Type=&quot;SDL_Texture *&quot;)]))" Category="Contains" FetchingParent="@5" />
+    <Link Source="@7" Target="(@1 @6 Type=&quot;_Func_base&lt;void,cv::Mat &amp; __ptr64&gt;&quot;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=&quot;tuple&lt;std::_Ph&lt;1&gt; &gt;&quot;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=&quot;tuple&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &amp;&amp; __ptr64&gt;&quot;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::Feature2D&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::WarperCreator&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::cuda::Event::Impl&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::cuda::GpuMat::Allocator&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::cuda::Stream::Impl&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::AffineWarper&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::Blender&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::BundleAdjusterBase&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::CompressedRectilinearPortraitWarper&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::CompressedRectilinearWarper&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::CylindricalWarper&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::CylindricalWarperGpu&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::Estimator&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::ExposureCompensator&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::FeaturesMatcher&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::FisheyeWarper&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::MercatorWarper&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::PaniniPortraitWarper&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::PaniniWarper&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::PlaneWarper&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::PlaneWarperGpu&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::SeamFinder&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::SphericalWarper&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::SphericalWarperGpu&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::StereographicWarper&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::detail::TransverseMercatorWarper&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::videostab::DeblurerBase&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::videostab::IDenseOptFlowEstimator&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::videostab::IFrameSource&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::videostab::ILog&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::videostab::IMotionStabilizer&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::videostab::IOutlierRejector&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::videostab::ISparseOptFlowEstimator&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::videostab::ImageMotionEstimatorBase&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::videostab::InpainterBase&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::videostab::MotionFilterBase&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@7" Target="(@1 @6 Type=_Ptr_base&lt;cv::videostab::WobbleSuppressorBase&gt;)" Category="Contains" FetchingParent="@7" />
+    <Link Source="@8" Target="@12" Category="References" Bounds="485.907897949219,271.920013427734,34.8433837890625,24.783447265625" IsTargetVirtualized="True" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" Weight="5">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@9" Target="@10" Category="References" Bounds="369.332305908203,105.959999084473,61.4870910644531,26.444206237793" IsTargetVirtualized="True" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" Weight="4">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@9" Target="@12" Category="References" Bounds="461,105.959999084473,0,186.960014343262" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" Weight="1" />
+    <Link Source="@9" Target="@19" Category="References" Bounds="41,98.8373260498047,375.658325195313,146.515121459961" IsTargetVirtualized="True" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" Weight="9">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@9" Target="@8" Category="CodeSchema_Calls" Bounds="468.486663818359,105.959999084473,61.6495056152344,131.691413879395" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" Weight="1" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Assembly" Label="어셈블리" BasedOn="File" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Assembly" NavigationActionLabel="어셈블리" />
+    <Category Id="CodeSchema_BasedOn" Label="기준" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="소스 기준" OutgoingActionLabel="기준" />
+    <Category Id="CodeSchema_Calls" Label="호출" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="호출자" OutgoingActionLabel="호출" />
+    <Category Id="CodeSchema_Class" Label="클래스" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="클래스" />
+    <Category Id="CodeSchema_Enum" Label="열거형" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Enum" NavigationActionLabel="열거형" />
+    <Category Id="CodeSchema_Member" Label="멤버" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Field" NavigationActionLabel="멤버" />
+    <Category Id="CodeSchema_Method" Label="메서드" BasedOn="CodeSchema_Member" CanBeDataDriven="True" DefaultAction="Link:Forward:CodeSchema_Calls" Icon="CodeSchema_Method" NavigationActionLabel="메서드" />
+    <Category Id="CodeSchema_Namespace" Label="네임스페이스" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Type" Icon="CodeSchema_Namespace" NavigationActionLabel="네임스페이스" />
+    <Category Id="CodeSchema_Type" Label="형식" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="형식" />
+    <Category Id="Contains" Label="포함" Description="링크 소스에 대상 개체가 포함되는지 여부입니다." CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="포함 위치" IsContainment="True" OutgoingActionLabel="포함" />
+    <Category Id="File" Label="파일" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="File" NavigationActionLabel="파일" />
+    <Category Id="References" Label="참조" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="DataVirtualized" Label="가상화된 데이터" Description="true인 경우 그래프에는 그래프에서 실제 작성되지 않은 가상화된 노드/링크에 대한 데이터를 나타내는 노드 및 링크가 포함될 수 있습니다." DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="DelayedChildNodesState" Label="지연된 자식 노드 상태" Description="지연된 자식 노드 상태가 지정되어 있지 않은 경우 Unspecified, 그룹에 아직 그래프로 페치하지 않은 자식 노드가 있는 경우 NotFetched, 그룹의 지연된 자식 노드를 이미 모두 페치한 경우에는 Fetched입니다." DataType="Microsoft.VisualStudio.GraphModel.DelayedDataState" />
+    <Property Id="DelayedCrossGroupLinksState" Label="지연된 그룹 간 링크 상태" Description="지연된 그룹 간 링크 상태가 지정되어 있지 않은 경우 Unspecified, 이 노드의 지연된 그룹 간 링크를 아직 그래프로 페치하지 않은 경우 NotFetched, 지연된 그룹 간 링크를 모두 이미 페치한 경우에는 Fetched입니다." DataType="Microsoft.VisualStudio.GraphModel.DelayedDataState" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="FetchedChildrenCount" DataType="System.Int32" />
+    <Property Id="FetchingParent" DataType="Microsoft.VisualStudio.GraphModel.GraphNodeId" />
+    <Property Id="FilePath" Label="파일 경로" Description="파일 경로" DataType="System.String" />
+    <Property Id="Group" Label="그룹" Description="그룹으로 노드가 표시됩니다." DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="Icon" Label="아이콘" Description="아이콘" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsSourceVirtualized" Label="가상화된 링크 소스" Description="true인 경우 링크 소스 끝에 그래프에서 실제 작성되지 않은 가상화된 노드/링크에 대한 데이터가 포함됩니다." DataType="System.Boolean" />
+    <Property Id="IsTargetVirtualized" Label="가상화된 링크 대상" Description="true인 경우 링크 대상 끝에 그래프에서 실제 작성되지 않은 가상화된 노드/링크에 대한 데이터가 포함됩니다." DataType="System.Boolean" />
+    <Property Id="Label" Label="레이블" Description="Annotatable 개체의 표시 가능 레이블입니다." DataType="System.String" />
+    <Property Id="Language" Label="언어" Description="언어" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="Visibility" Label="표시 유형" Description="그래프의 노드 표시 여부를 정의합니다." DataType="System.Windows.Visibility" />
+    <Property Id="Weight" Label="가중치" Description="가중치입니다." DataType="System.Double" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="어셈블리" ValueType="Uri" />
+    <Name Id="Member" Label="멤버" ValueType="System.Object" />
+    <Name Id="Name" Label="이름" ValueType="System.String" />
+    <Name Id="Namespace" Label="네임스페이스" ValueType="System.String" />
+    <Name Id="OverloadingParameters" Label="매개 변수" ValueType="Microsoft.VisualStudio.GraphModel.GraphNodeIdCollection" Formatter="NameValueNoEscape" />
+    <Name Id="Type" Label="형식" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(beeb4e06-8a76-4aa8-b390-dae189580b24.OutputPathUri)" />
+    <Alias n="2" Id="(@1)" />
+    <Alias n="3" Id="Namespace=::" />
+    <Alias n="4" Id="(@1 @3)" />
+    <Alias n="5" Id="(@1 Namespace=cv)" />
+    <Alias n="6" Id="Namespace=std" />
+    <Alias n="7" Id="(@1 @6)" />
+    <Alias n="8" Id="(@1 @3 Member=init_logger)" />
+    <Alias n="9" Id="(@1 @3 Member=SDL_main)" />
+    <Alias n="10" Id="(@1 @3 Type=Game)" />
+    <Alias n="11" Id="(@1 @3 Type=LogColor)" />
+    <Alias n="12" Id="(@1 @3 Type=Logger)" />
+    <Alias n="13" Id="(@1 @3 Type=LogLevel)" />
+    <Alias n="14" Id="(@1 @3 Type=MainWindow)" />
+    <Alias n="15" Id="(@1 @3 Type=StatsWindow)" />
+    <Alias n="16" Id="(@1 @3 Type=Thread)" />
+    <Alias n="17" Id="(@1 @3 Type=ThreadStatus)" />
+    <Alias n="18" Id="(@1 @3 Type=Webcam)" />
+    <Alias n="19" Id="(@1 @3 Type=Window)" />
+  </IdentifierAliases>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="오류" ValueLabel="오류 수준">
+      <Condition Expression="HasValue('ErrorLevel')" />
+      <Setter Property="Icon" Value="Node.Error" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="결과" ValueLabel="True">
+      <Condition Expression="HasCategory('QueryResult')" />
+      <Setter Property="Background" Value="#FFBCFFBE" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="테스트 프로젝트" ValueLabel="테스트 프로젝트">
+      <Condition Expression="HasCategory('CodeMap_TestProject')" />
+      <Setter Property="Icon" Value="CodeMap_TestProject" />
+      <Setter Property="Background" Value="#FF307A69" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="웹 프로젝트" ValueLabel="웹 프로젝트">
+      <Condition Expression="HasCategory('CodeMap_WebProject')" />
+      <Setter Property="Icon" Value="CodeMap_WebProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Windows 스토어 프로젝트" ValueLabel="Windows 스토어 프로젝트">
+      <Condition Expression="HasCategory('CodeMap_WindowsStoreProject')" />
+      <Setter Property="Icon" Value="CodeMap_WindowsStoreProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Phone 프로젝트" ValueLabel="Phone 프로젝트">
+      <Condition Expression="HasCategory('CodeMap_PhoneProject')" />
+      <Setter Property="Icon" Value="CodeMap_PhoneProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="이식 가능한 라이브러리" ValueLabel="이식 가능한 라이브러리">
+      <Condition Expression="HasCategory('CodeMap_PortableLibraryProject')" />
+      <Setter Property="Icon" Value="CodeMap_PortableLibraryProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="WPF 프로젝트" ValueLabel="WPF 프로젝트">
+      <Condition Expression="HasCategory('CodeMap_WpfProject')" />
+      <Setter Property="Icon" Value="CodeMap_WpfProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="VSIX 프로젝트" ValueLabel="VSIX 프로젝트">
+      <Condition Expression="HasCategory('CodeMap_VsixProject')" />
+      <Setter Property="Icon" Value="CodeMap_VsixProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="모델링 프로젝트" ValueLabel="모델링 프로젝트">
+      <Condition Expression="HasCategory('CodeMap_ModelingProject')" />
+      <Setter Property="Icon" Value="CodeMap_ModelingProject" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="어셈블리" ValueLabel="범주 있음">
+      <Condition Expression="HasCategory('CodeSchema_Assembly')" />
+      <Setter Property="Background" Value="#FF094167" />
+      <Setter Property="Stroke" Value="#FF094167" />
+      <Setter Property="Icon" Value="CodeSchema_Assembly" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="네임스페이스" ValueLabel="범주 있음">
+      <Condition Expression="HasCategory('CodeSchema_Namespace')" />
+      <Setter Property="Background" Value="#FF0E619A" />
+      <Setter Property="Stroke" Value="#FF0E619A" />
+      <Setter Property="Icon" Value="CodeSchema_Namespace" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="인터페이스" ValueLabel="범주 있음">
+      <Condition Expression="HasCategory('CodeSchema_Interface')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Interface" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="구조체" ValueLabel="범주 있음">
+      <Condition Expression="HasCategory('CodeSchema_Struct')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Struct" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="열거형" ValueLabel="범주 있음">
+      <Condition Expression="HasCategory('CodeSchema_Enum')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Enum" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="대리자" ValueLabel="범주 있음">
+      <Condition Expression="HasCategory('CodeSchema_Delegate')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Delegate" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="클래스" ValueLabel="범주 있음">
+      <Condition Expression="HasCategory('CodeSchema_Type')" />
+      <Setter Property="Background" Value="#FF0E70C0" />
+      <Setter Property="Stroke" Value="#FF0E70C0" />
+      <Setter Property="Icon" Value="CodeSchema_Class" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="속성" ValueLabel="범주 있음">
+      <Condition Expression="HasCategory('CodeSchema_Property')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Property" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="메서드" ValueLabel="범주 있음">
+      <Condition Expression="HasCategory('CodeSchema_Method') Or HasCategory('CodeSchema_CallStackUnresolvedMethod')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Method" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="이벤트" ValueLabel="범주 있음">
+      <Condition Expression="HasCategory('CodeSchema_Event')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Event" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="필드" ValueLabel="범주 있음">
+      <Condition Expression="HasCategory('CodeSchema_Field')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Field" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Out 매개 변수" ValueLabel="범주 있음">
+      <Condition Expression="CodeSchemaProperty_IsOut = 'True'" />
+      <Setter Property="Icon" Value="CodeSchema_OutParameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Parameter" ValueLabel="범주 있음">
+      <Condition Expression="HasCategory('CodeSchema_Parameter')" />
+      <Setter Property="Icon" Value="CodeSchema_Parameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="지역 변수" ValueLabel="범주 있음">
+      <Condition Expression="HasCategory('CodeSchema_LocalExpression')" />
+      <Setter Property="Icon" Value="CodeSchema_LocalExpression" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="외부" ValueLabel="범주 있음">
+      <Condition Expression="HasCategory('Externals')" />
+      <Setter Property="Background" Value="#FF424242" />
+      <Setter Property="Stroke" Value="#FF424242" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="상속 원본" ValueLabel="True">
+      <Condition Expression="HasCategory('InheritsFrom')" />
+      <Setter Property="Stroke" Value="#FF00A600" />
+      <Setter Property="StrokeDashArray" Value="2 0" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="구현" ValueLabel="True">
+      <Condition Expression="HasCategory('Implements')" />
+      <Setter Property="Stroke" Value="#8000A600" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="호출" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_Calls')" />
+      <Setter Property="Stroke" Value="#FFFF00FF" />
+      <Setter Property="StrokeDashArray" Value="2 0" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="함수 포인터" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_FunctionPointer')" />
+      <Setter Property="Stroke" Value="#FFFF00FF" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="필드 읽기" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_FieldRead')" />
+      <Setter Property="Stroke" Value="#FF00AEEF" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="필드 쓰기" ValueLabel="True">
+      <Condition Expression="HasCategory('CodeSchema_FieldWrite')" />
+      <Setter Property="Stroke" Value="#FF00AEEF" />
+      <Setter Property="DrawArrow" Value="true" />
+      <Setter Property="IsHidden" Value="false" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Inherits From" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('InheritsFrom') And Target.HasCategory('CodeSchema_Class')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Implements" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('Implements') And Target.HasCategory('CodeSchema_Interface')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Comment Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="Source.HasCategory('Comment')" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Cursor Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCursorLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Disabled Breakpoint Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="DisabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Enabled Breakpoint Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="EnabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Instruction Pointer Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsInstructionPointerLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Current Callstack Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCurrentCallstackFrame" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="반환" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CodeSchema_ReturnTypeLink')" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="참조" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('References')" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="특성 사용" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CodeSchema_AttributeUse')" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="솔루션 폴더" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('CodeMap_SolutionFolder')" />
+      <Setter Property="Background" Value="#FFDEBA83" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="프로젝트 참조" ValueLabel="프로젝트 참조">
+      <Condition Expression="HasCategory('CodeMap_ProjectReference')" />
+      <Setter Property="Stroke" Value="#9A9A9A" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="외부 참조" ValueLabel="외부 참조">
+      <Condition Expression="HasCategory('CodeMap_ExternalReference')" />
+      <Setter Property="Stroke" Value="#9A9A9A" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+  </Styles>
+  <Paths>
+    <Path Id="beeb4e06-8a76-4aa8-b390-dae189580b24.OutputPath" Value="C:\Users\maxsw\OneDrive - 서울특별시교육청\Brick\x64\Debug\Brick.exe" />
+    <Path Id="beeb4e06-8a76-4aa8-b390-dae189580b24.OutputPathUri" Value="file:///C:/Users/maxsw/OneDrive - 서울특별시교육청/Brick/x64/Debug/Brick.exe" />
+  </Paths>
+</DirectedGraph>

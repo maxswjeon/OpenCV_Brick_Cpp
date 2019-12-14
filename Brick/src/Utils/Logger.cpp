@@ -12,23 +12,58 @@ Logger* Logger::GetInstance()
 	return _instance;
 }
 
-Logger::Logger()
+void Logger::SetLevel(LogLevel level)
 {
-#if defined(_WIN32) && LOG_COLOR
-	DWORD flags;
-	GetConsoleMode(GetStdHandle(STD_OUTPUT_HANDLE), &flags);
-	flags |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
-	SetConsoleMode(GetStdHandle(STD_OUTPUT_HANDLE), flags);
+	_log_level = level;
+}
+
+void Logger::EnableColor(bool flag)
+{
+	_is_color = flag;
 	
-	GetConsoleMode(GetStdHandle(STD_ERROR_HANDLE), &flags);
-	flags |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
-	SetConsoleMode(GetStdHandle(STD_ERROR_HANDLE), flags);
+#ifdef _WIN32
+	DWORD flags;
+	if (_is_color)
+	{
+		GetConsoleMode(GetStdHandle(STD_OUTPUT_HANDLE), &flags);
+		flags |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+		SetConsoleMode(GetStdHandle(STD_OUTPUT_HANDLE), flags);
+
+		GetConsoleMode(GetStdHandle(STD_ERROR_HANDLE), &flags);
+		flags |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+		SetConsoleMode(GetStdHandle(STD_ERROR_HANDLE), flags);
+	}
+	else
+	{
+		GetConsoleMode(GetStdHandle(STD_OUTPUT_HANDLE), &flags);
+		flags &= ~ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+		SetConsoleMode(GetStdHandle(STD_OUTPUT_HANDLE), flags);
+
+		GetConsoleMode(GetStdHandle(STD_ERROR_HANDLE), &flags);
+		flags &= ~ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+		SetConsoleMode(GetStdHandle(STD_ERROR_HANDLE), flags);
+	}
+#endif
+}
+
+void Logger::SetColor(LogLevel level, LogColor color)
+{
+	_log_color[int(level)] = color;
+}
+
+Logger::Logger() : _log_color{ LogColor::WHITE }
+{
+	_is_color = false;
+#ifdef _DEBUG
+	_log_level = LogLevel::DEBG;
+#else
+	_log_level = LogLevel::INFO;
 #endif
 }
 
 void Logger::vLog(LogLevel level, const char* format, va_list ap)
 {
-	if (level < LOG_LEVEL)
+	if (level < _log_level)
 	{
 		return;
 	}
@@ -54,15 +89,17 @@ void Logger::vLog(LogLevel level, const char* format, va_list ap)
 	}
 	
 	std::lock_guard<std::mutex> lock(_mutex);
-#if LOG_COLOR
-	int level_color[] = LOG_COLOR_ARRAY;
-	printf("\x1b[%dm", level_color[int(level)]);
-#endif
+
+	if (_is_color)
+	{
+		printf("\x1b[%dm", _log_color[int(level)]);
+	}
 	printf("[%s] ", level_text);
 	vprintf(format, ap);
-#if LOG_COLOR
-	printf("\x1b[0m");
-#endif
+	if (_is_color)
+	{
+		printf("\x1b[0m");
+	}
 	printf("\n");
 }
 
@@ -100,7 +137,7 @@ void Logger::Debug(const char* format, ...)
 
 void Logger::Debug(bool show_level)
 {
-	if (LogLevel::DEBG < LOG_LEVEL)
+	if (LogLevel::DEBG < _log_level)
 	{
 		return;
 	}
@@ -133,7 +170,7 @@ void Logger::Verbose(const char* format, ...)
 
 void Logger::Verbose(bool show_level)
 {
-	if (LogLevel::VERB < LOG_LEVEL)
+	if (LogLevel::VERB < _log_level)
 	{
 		return;
 	}
@@ -166,7 +203,7 @@ void Logger::Info(const char* format, ...)
 
 void Logger::Info(bool show_level)
 {
-	if (LogLevel::INFO < LOG_LEVEL)
+	if (LogLevel::INFO < _log_level)
 	{
 		return;
 	}
@@ -199,7 +236,7 @@ void Logger::Warn(const char* format, ...)
 
 void Logger::Warn(bool show_level)
 {
-	if (LogLevel::WARN < LOG_LEVEL)
+	if (LogLevel::WARN < _log_level)
 	{
 		return;
 	}
@@ -232,7 +269,7 @@ void Logger::Error(const char* format, ...)
 
 void Logger::Error(bool show_level)
 {
-	if (LogLevel::EROR < LOG_LEVEL)
+	if (LogLevel::EROR < _log_level)
 	{
 		return;
 	}

@@ -19,20 +19,31 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\config.h" />
+    <ClInclude Include="Frame.h" />
+    <ClInclude Include="Images.h" />
     <ClInclude Include="include\Game.h" />
+    <ClInclude Include="include\Queues\Queue.hpp" />
     <ClInclude Include="include\Threads\Thread.h" />
-    <ClInclude Include="include\Threads\Webcam.h" />
+    <ClInclude Include="include\Threads\ThreadPool.hpp" />
+    <ClInclude Include="include\Threads\WebcamThread.h" />
     <ClInclude Include="include\Utils\Logger.h" />
+    <ClInclude Include="include\Utils\Queue.hpp" />
+    <ClInclude Include="include\Windows\MainWindow.h" />
+    <ClInclude Include="include\Windows\StatsWindow.h" />
     <ClInclude Include="include\Windows\Window.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Frame.cpp" />
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Threads\Thread.cpp" />
-    <ClCompile Include="src\Threads\Webcam.cpp" />
+    <ClCompile Include="src\Threads\WebcamThread.cpp" />
+    <ClCompile Include="src\Utils\Images.cpp" />
     <ClCompile Include="src\Utils\Logger.cpp" />
+    <ClCompile Include="src\Windows\MainWindow.cpp" />
+    <ClCompile Include="src\Windows\StatsWindow.cpp" />
     <ClCompile Include="src\Windows\Window.cpp" />
+    <ClCompile Include="src\Windows\WindowBuilder.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -115,8 +126,8 @@
       <SubSystem>Console</SubSystem>
     </Link>
     <PostBuildEvent>
-      <Command>copy C:\SDL2-2.0.10\lib\$(PlatformShortName)\*.dll $(OutDir)
-copy C:\opencv-4.1.2\$(PlatformShortName)\vc16\bin\*.dll $(OutDir)</Command>
+      <Command>copy "C:\SDL2-2.0.10\lib\$(PlatformShortName)\*.dll" "$(OutDir)"
+copy "C:\opencv-4.1.2\$(PlatformShortName)\vc16\bin\*.dll" "$(OutDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -124,14 +135,18 @@ copy C:\opencv-4.1.2\$(PlatformShortName)\vc16\bin\*.dll $(OutDir)</Command>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
     </Link>
     <PostBuildEvent>
-      <Command>copy C:\SDL2-2.0.10\lib\$(PlatformShortName)\*.dll $(OutDir)
-copy C:\opencv-4.1.2\$(PlatformShortName)\vc16\bin\*.dll $(OutDir)</Command>
+      <Command>copy "C:\SDL2-2.0.10\lib\$(PlatformShortName)\*.dll" "$(OutDir)"
+copy "C:\opencv-4.1.2\$(PlatformShortName)\vc16\bin\*.dll" "$(OutDir)"</Command>
     </PostBuildEvent>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -147,8 +162,8 @@ copy C:\opencv-4.1.2\$(PlatformShortName)\vc16\bin\*.dll $(OutDir)</Command>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <PostBuildEvent>
-      <Command>copy C:\SDL2-2.0.10\lib\$(PlatformShortName)\*.dll $(OutDir)
-copy C:\opencv-4.1.2\$(PlatformShortName)\vc16\bin\*.dll $(OutDir)</Command>
+      <Command>copy "C:\SDL2-2.0.10\lib\$(PlatformShortName)\*.dll" "$(OutDir)"
+copy "C:\opencv-4.1.2\$(PlatformShortName)\vc16\bin\*.dll" "$(OutDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -165,8 +180,8 @@ copy C:\opencv-4.1.2\$(PlatformShortName)\vc16\bin\*.dll $(OutDir)</Command>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <PostBuildEvent>
-      <Command>copy C:\SDL2-2.0.10\lib\$(PlatformShortName)\*.dll $(OutDir)
-copy C:\opencv-4.1.2\$(PlatformShortName)\vc16\bin\*.dll $(OutDir)</Command>
+      <Command>copy "C:\SDL2-2.0.10\lib\$(PlatformShortName)\*.dll" "$(OutDir)"
+copy "C:\opencv-4.1.2\$(PlatformShortName)\vc16\bin\*.dll" "$(OutDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

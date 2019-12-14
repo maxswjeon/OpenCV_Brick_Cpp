@@ -9,6 +9,8 @@
     </Filter>
     <Filter Include="Sources">
       <UniqueIdentifier>{0760867f-335a-4b16-a970-9ea01f4f428d}</UniqueIdentifier>
+      <Extensions>
+      </Extensions>
     </Filter>
     <Filter Include="Headers\Utils">
       <UniqueIdentifier>{c9accda1-53ea-4e3e-8037-27ba3946113e}</UniqueIdentifier>
@@ -28,11 +30,17 @@
     <Filter Include="Sources\Windows">
       <UniqueIdentifier>{a929e7d4-1289-4d93-889c-67f27e200e88}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resources\Libraries">
+      <UniqueIdentifier>{bfcfad16-1691-4ead-9e3f-35bf52ec4e5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Threads\Webcam">
+      <UniqueIdentifier>{20a6366e-8515-48f2-8a29-d6afac9c9bd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Threads\Webcam">
+      <UniqueIdentifier>{dcccb44e-953c-470b-a517-b1a54d332aa6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\config.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
     <ClInclude Include="include\Utils\Logger.h">
       <Filter>Headers\Utils</Filter>
     </ClInclude>
@@ -42,17 +50,35 @@
     <ClInclude Include="include\Threads\Thread.h">
       <Filter>Headers\Threads</Filter>
     </ClInclude>
-    <ClInclude Include="include\Threads\Webcam.h">
-      <Filter>Headers\Threads</Filter>
-    </ClInclude>
     <ClInclude Include="include\Windows\Window.h">
       <Filter>Headers\Windows</Filter>
     </ClInclude>
+    <ClInclude Include="include\Windows\MainWindow.h">
+      <Filter>Headers\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Windows\StatsWindow.h">
+      <Filter>Headers\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Images.h">
+      <Filter>Headers\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Queues\Queue.hpp">
+      <Filter>Headers\Threads</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Utils\Queue.hpp">
+      <Filter>Headers\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Threads\ThreadPool.hpp">
+      <Filter>Headers\Threads</Filter>
+    </ClInclude>
+    <ClInclude Include="Frame.h">
+      <Filter>Headers\Threads\Webcam</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Threads\WebcamThread.h">
+      <Filter>Headers\Threads\Webcam</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
     <ClCompile Include="src\Utils\Logger.cpp">
       <Filter>Sources\Utils</Filter>
     </ClCompile>
@@ -62,11 +88,29 @@
     <ClCompile Include="src\Threads\Thread.cpp">
       <Filter>Sources\Threads</Filter>
     </ClCompile>
-    <ClCompile Include="src\Threads\Webcam.cpp">
-      <Filter>Sources\Threads</Filter>
-    </ClCompile>
     <ClCompile Include="src\Windows\Window.cpp">
       <Filter>Sources\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Windows\MainWindow.cpp">
+      <Filter>Sources\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Windows\StatsWindow.cpp">
+      <Filter>Sources\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Windows\WindowBuilder.cpp">
+      <Filter>Sources\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\Images.cpp">
+      <Filter>Sources\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Frame.cpp">
+      <Filter>Sources\Threads\Webcam</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Threads\WebcamThread.cpp">
+      <Filter>Sources\Threads\Webcam</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,11 +1,14 @@
 #pragma once
 
+#pragma comment(lib, "opencv_world412.lib")
 #pragma comment(lib, "SDL2.lib")
 #pragma comment(lib, "SDL2main.lib")
 #pragma comment(lib, "opengl32.lib")
 
-#include "config.h"
 #include "Utils/Logger.h"
+#include "Windows/MainWindow.h"
+#include "Windows/StatsWindow.h"
+#include "Threads/WebcamThread.h"
 
 #include <SDL.h>
 #include <SDL_video.h>
@@ -15,18 +18,18 @@ class Game
 private:
 	Logger* _logger;
 
-	SDL_Window* _window;
-	SDL_Renderer* _renderer;
+	MainWindow _main_window;
+	StatsWindow _stats_window;
 
-	int InitSdl() const;
-	int InitWindow();
-	void GetRenderer() const;
-	int InitRenderer();
-	void InitWebcam();
-	
+	std::shared_ptr<Queue<Frame>> _queue;
+	WebcamThread _thread_webcam;
+
+	bool _show_stats;
+		
 public:
 	bool Valid = false;
-	
-	Game();
+
+	Game(Window::Builder main_builder);
+	Game(Window::Builder main_builder, Window::Builder stats_builder);
 	
 };

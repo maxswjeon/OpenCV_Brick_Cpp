@@ -11,10 +11,10 @@ enum class ThreadStatus
 
 class Thread
 {
-private:
+protected:
 	std::thread _thread;
 	ThreadStatus _status;
-	
+
 public:
 	Thread();
 	virtual ~Thread();
@@ -23,9 +23,8 @@ public:
 	Thread(Thread&& other) noexcept = delete;
 	Thread& operator=(const Thread& other) = delete;
 	Thread& operator=(Thread&& other) noexcept = delete;
-	
+
 	void start();
 	void stop();
-	virtual void run();
-
-};
+	virtual void run() = 0;
+}
