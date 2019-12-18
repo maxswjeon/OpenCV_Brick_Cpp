@@ -1,5 +1,4 @@
 # Game Settings
-Game.Stats = true
 
 Game.Window.Name = OpenCV Brick
 Game.Window.Width = 1280

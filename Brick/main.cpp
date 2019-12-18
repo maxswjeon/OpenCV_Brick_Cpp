@@ -3,12 +3,14 @@
 
 #include "Logger.h"
 #include "ConfigLoader.h"
+#include "EventHandler.h"
 
 #include "MainWindow.h"
+#include "StatsWindow.h"
+
+#include <chrono>
 
 #include <SDL.h>
-#include "StatsWindow.h"
-#include "EventQueue.h"
 
 int InitSDL();
 
@@ -27,48 +29,38 @@ int main(int argc, char* argv[])
 	}
 
 	logger.Debug("Create MainWindow");
-	MainWindow window;
-	if (!window.Valid)
+	MainWindow main_window = MainWindow();
+	if (!main_window.Valid)
 	{
 		logger.Error("Failed to Create Main Window");
 	}
-
-	window.Show();
-	MainWindow window1;
-	if (!window1.Valid)
-	{
-		logger.Error("Failed to Create Main Window");
-	}
-
-	window1.Show();
-
+	main_window.Show();
+	
 	SDL_Event e;
-	EventQueue& queue = EventQueue::GetInstance();
-	queue.AddQueue(0);
+	EventHandler& event = EventHandler::GetInstance();
 	while (true)
 	{
 		if (SDL_PollEvent(&e))
 		{
-			logger.Debug("Event Polled");
-			logger.Debug("\tEvent Type : %d", e.type);
-			if (e.type == SDL_WINDOWEVENT)
-			{
-				logger.Debug("\t Window Event : %d", e.window.event);
-				logger.Debug("\t Window ID : %d", e.window.windowID);
-			}
-			logger.Debug();
+			std::chrono::system_clock::time_point start = std::chrono::system_clock::now();
+			event.HandleEvent(e);
+			std::chrono::system_clock::time_point end = std::chrono::system_clock::now();
 			
-			if (e.type == SDL_QUIT)
+			std::chrono::milliseconds elapsed = 
+				std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+			logger.Debug("Event Handle in %lldms", elapsed.count());
+			if (elapsed.count() > 5)
 			{
+				logger.Warn("Event Process Time Exceeded 5ms");
+			}
+
+			if (e.type == SDL_QUIT){
 				break;
-			}
-			
-			if (e.type == SDL_WINDOWEVENT) {
-				queue.Enqueue(e);
 			}
 		}
 	}
-	
+
+	SDL_Quit();
 	return 0;
 }
 

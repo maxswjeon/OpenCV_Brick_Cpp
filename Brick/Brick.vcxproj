@@ -20,7 +20,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ConfigLoader.h" />
-    <ClInclude Include="EventQueue.h" />
+    <ClInclude Include="EventHandler.h" />
+    <ClInclude Include="FrameHandler.h" />
     <ClInclude Include="Logger.h" />
     <ClInclude Include="MainWindow.h" />
     <ClInclude Include="resource.h" />
@@ -30,7 +31,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConfigLoader.cpp" />
-    <ClCompile Include="EventQueue.cpp" />
+    <ClCompile Include="EventHandler.cpp" />
+    <ClCompile Include="FrameHandler.cpp" />
     <ClCompile Include="Logger.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainWindow.cpp" />

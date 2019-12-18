@@ -39,7 +39,10 @@
     <ClInclude Include="StatsWindow.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="EventQueue.h">
+    <ClInclude Include="EventHandler.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameHandler.h">
       <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>
@@ -65,7 +68,10 @@
     <ClCompile Include="StatsWindow.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="EventQueue.cpp">
+    <ClCompile Include="EventHandler.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameHandler.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
   </ItemGroup>

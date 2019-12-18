@@ -35,8 +35,7 @@ class Logger
 {
 private:
 	std::mutex _mutex;
-	static Logger _instance;
-
+	
 	bool _is_color;
 	LogColor _log_color[5];
 	LogLevel _log_level;

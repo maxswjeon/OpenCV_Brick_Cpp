@@ -12,9 +12,17 @@ MainWindow::MainWindow()
 	
 }
 
+int MainWindow::Update()
+{
+	//Check Input
+	//Status
+	//
+	
+	return 0;
+}
+
+
 int MainWindow::Loop(SDL_Event e)
 {
-
-	SDL_Delay(1);
-	return 0;
+	
 }

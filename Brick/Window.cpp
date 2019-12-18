@@ -30,32 +30,40 @@ Window::Window(const char* title, int width, int height, int x, int y, int rende
 	}
 
 	_id = SDL_GetWindowID(_window);
+
+	EventHandler& event = EventHandler::GetInstance();
+	event.AddWindowHandler([&](SDL_Event e) {
+		switch (e.window.event)
+		{
+		case SDL_WINDOWEVENT_CLOSE:
+			SDL_DestroyWindow(_window);
+			EventHandler& event = EventHandler::GetInstance();
+			event.RemoveWindowHandler(_id);
+			Valid = false;
+			return;
+		}
+		Loop(e);
+		SDL_Delay(1);
+	}, _id);
+
 	_thread = std::thread([&]
 	{
-		EventQueue& queue = EventQueue::GetInstance();
-		queue.AddQueue(_id);
+		auto start = std::chrono::system_clock::now();
+		auto target = start + frame_speed(1);
 
-		SDL_Event e;
-		do {
-			e = queue.Dequeue(_id);
-			if (e.window.event == SDL_WINDOWEVENT_CLOSE || e.type == SDL_QUIT)
-			{
-				SDL_DestroyWindow(_window);
-				Valid = false;
-				break;
-			}
+		Update();
+
+		if (std::chrono::system_clock::now() > target)
+		{
+			_logger.Warn("Frame Refresh Rate Low!");
 		}
-		while (!Loop(e));
-
-		_logger.Info("Window #%d Closed", _id);
+		else
+		{
+			std::this_thread::sleep_until(target);
+		}
 	});
 	
 	Valid = true;
-}
-
-Window::~Window()
-{
-	_thread.join();
 }
 
 void Window::Show() const
@@ -78,21 +86,4 @@ void Window::Hide() const
 	}
 
 	SDL_HideWindow(_window);
-}
-
-void Window::Join()
-{
-	if (!Valid)
-	{
-		_logger.Error("Cannot Join an Invalid Window");
-		return;
-	}
-
-	EventQueue& queue = EventQueue::GetInstance();
-	SDL_Event e;
-	do
-	{
-		e = queue.Dequeue(_id);
-	} while (Loop(e) == 0);
-	queue.RemoveQueue(_id);
 }
