@@ -19,15 +19,7 @@ enum class LogColor : char {
 	BLUE = 34,
 	MAGENTA = 35,
 	CYAN = 36,
-	WHITE = 37,
-	BRIGHT_BLACK = 40,
-	BRIGHT_RED = 41,
-	BRIGHT_GREEN = 42,
-	BRIGHT_YELLOW = 43,
-	BRIGHT_BLUE = 44,
-	BRIGHT_MAGENTA = 45,
-	BRIGHT_CYAN = 46,
-	BRIGHT_WHITE = 47,
+	WHITE = 37
 };
 
 enum class LogLevel :int
@@ -43,7 +35,7 @@ class Logger
 {
 private:
 	std::mutex _mutex;
-	static Logger* _instance;
+	static Logger _instance;
 
 	bool _is_color;
 	LogColor _log_color[5];
@@ -54,11 +46,12 @@ private:
 	void vLog(LogLevel, const char*, va_list);
 	
 public:
-	static Logger* GetInstance();
+	static Logger& GetInstance();
 	void SetLevel(LogLevel);
 	void EnableColor(bool flag = true);
 	void SetColor(LogLevel, LogColor);
-	
+	void SetColor(LogColor debug, LogColor verbose, LogColor info, LogColor warn, LogColor error);
+	LogLevel GetLevel() const;
 
 	void Log(LogLevel, std::string, ...);
 	void Log(LogLevel, const char*, ...);
@@ -82,5 +75,10 @@ public:
 	void Error(std::string, ...);
 	void Error(const char*, ...);
 	void Error(bool show_level = false);
+
+	Logger(const Logger& other) = delete;
+	Logger(Logger&& other) noexcept = delete;
+	Logger& operator=(const Logger& other) = delete;
+	Logger& operator=(Logger&& other) noexcept = delete;
 };
 

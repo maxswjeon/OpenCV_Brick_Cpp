@@ -19,31 +19,27 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Frame.h" />
-    <ClInclude Include="Images.h" />
-    <ClInclude Include="include\Game.h" />
-    <ClInclude Include="include\Queues\Queue.hpp" />
-    <ClInclude Include="include\Threads\Thread.h" />
-    <ClInclude Include="include\Threads\ThreadPool.hpp" />
-    <ClInclude Include="include\Threads\WebcamThread.h" />
-    <ClInclude Include="include\Utils\Logger.h" />
-    <ClInclude Include="include\Utils\Queue.hpp" />
-    <ClInclude Include="include\Windows\MainWindow.h" />
-    <ClInclude Include="include\Windows\StatsWindow.h" />
-    <ClInclude Include="include\Windows\Window.h" />
+    <ClInclude Include="ConfigLoader.h" />
+    <ClInclude Include="EventQueue.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="MainWindow.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="StatsWindow.h" />
+    <ClInclude Include="Utilities.h" />
+    <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Frame.cpp" />
-    <ClCompile Include="src\Game.cpp" />
-    <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\Threads\Thread.cpp" />
-    <ClCompile Include="src\Threads\WebcamThread.cpp" />
-    <ClCompile Include="src\Utils\Images.cpp" />
-    <ClCompile Include="src\Utils\Logger.cpp" />
-    <ClCompile Include="src\Windows\MainWindow.cpp" />
-    <ClCompile Include="src\Windows\StatsWindow.cpp" />
-    <ClCompile Include="src\Windows\Window.cpp" />
-    <ClCompile Include="src\Windows\WindowBuilder.cpp" />
+    <ClCompile Include="ConfigLoader.cpp" />
+    <ClCompile Include="EventQueue.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="StatsWindow.cpp" />
+    <ClCompile Include="Utilities.cpp" />
+    <ClCompile Include="Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Brick.rc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -57,6 +53,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
+    <UseIntelTBB>true</UseIntelTBB>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -64,12 +61,14 @@
     <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
+    <UseIntelTBB>true</UseIntelTBB>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
+    <UseIntelTBB>true</UseIntelTBB>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -77,6 +76,7 @@
     <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
+    <UseIntelTBB>true</UseIntelTBB>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -97,24 +97,24 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(ProjectDir)include;C:\opencv-4.1.2\include;C:\SDL2-2.0.10\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\opencv-4.1.2\$(PlatformShortName)\vc16\lib;C:\SDL2-2.0.10\lib\$(PlatformShortName);$(LibraryPath)</LibraryPath>
-    <SourcePath>$(ProjectDir)src;$(SourcePath)</SourcePath>
+    <IncludePath>C:\Program Files %28x86%29\IntelSWTools\compilers_and_libraries\windows\tbb\include;C:\Library\Binaries\opencv-4.1.2\include;C:\Library\Binaries\SDL2_image-2.0.5\include;C:\Library\Binaries\SDL2_ttf-2.0.15\include;C:\Library\Binaries\SDL2-2.0.10\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Library\Binaries\opencv-4.1.2\lib\$(PlatformShortName);C:\Library\Binaries\SDL2-2.0.10\lib\$(PlatformShortName);C:\Library\Binaries\SDL2_image-2.0.5\lib\$(PlatformShortName);C:\Library\Binaries\SDL2_ttf-2.0.15\lib\$(PlatformShortName);C:\Program Files %28x86%29\IntelSWTools\compilers_and_libraries\windows\tbb\lib\ia32_win\vc14;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(ProjectDir)include;C:\opencv-4.1.2\include;C:\SDL2-2.0.10\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\opencv-4.1.2\$(PlatformShortName)\vc16\lib;C:\SDL2-2.0.10\lib\$(PlatformShortName);$(LibraryPath)</LibraryPath>
-    <SourcePath>$(ProjectDir)src;$(SourcePath)</SourcePath>
+    <IncludePath>C:\Program Files %28x86%29\IntelSWTools\compilers_and_libraries\windows\tbb\include;C:\Library\Binaries\opencv-4.1.2\include;C:\Library\Binaries\SDL2_image-2.0.5\include;C:\Library\Binaries\SDL2_ttf-2.0.15\include;C:\Library\Binaries\SDL2-2.0.10\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Library\Binaries\opencv-4.1.2\lib\$(PlatformShortName);C:\Library\Binaries\SDL2-2.0.10\lib\$(PlatformShortName);C:\Library\Binaries\SDL2_image-2.0.5\lib\$(PlatformShortName);C:\Library\Binaries\SDL2_ttf-2.0.15\lib\$(PlatformShortName);C:\Program Files %28x86%29\IntelSWTools\compilers_and_libraries\windows\tbb\lib\ia32_win\vc14;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(ProjectDir)include;C:\opencv-4.1.2\include;C:\SDL2-2.0.10\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\opencv-4.1.2\$(PlatformShortName)\vc16\lib;C:\SDL2-2.0.10\lib\$(PlatformShortName);$(LibraryPath)</LibraryPath>
-    <SourcePath>$(ProjectDir)src;$(SourcePath)</SourcePath>
+    <IncludePath>C:\Program Files %28x86%29\IntelSWTools\compilers_and_libraries\windows\tbb\include;C:\Library\Binaries\opencv-4.1.2\include;C:\Library\Binaries\SDL2_image-2.0.5\include;C:\Library\Binaries\SDL2_ttf-2.0.15\include;C:\Library\Binaries\SDL2-2.0.10\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Library\Binaries\opencv-4.1.2\lib\$(PlatformShortName);C:\Library\Binaries\SDL2-2.0.10\lib\$(PlatformShortName);C:\Library\Binaries\SDL2_image-2.0.5\lib\$(PlatformShortName);C:\Library\Binaries\SDL2_ttf-2.0.15\lib\$(PlatformShortName);C:\Program Files %28x86%29\IntelSWTools\compilers_and_libraries\windows\tbb\lib\intel64_win\vc14;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(ProjectDir)include;C:\opencv-4.1.2\include;C:\SDL2-2.0.10\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\opencv-4.1.2\$(PlatformShortName)\vc16\lib;C:\SDL2-2.0.10\lib\$(PlatformShortName);$(LibraryPath)</LibraryPath>
-    <SourcePath>$(ProjectDir)src;$(SourcePath)</SourcePath>
+    <IncludePath>C:\Program Files %28x86%29\IntelSWTools\compilers_and_libraries\windows\tbb\include;C:\Library\Binaries\opencv-4.1.2\include;C:\Library\Binaries\SDL2_image-2.0.5\include;C:\Library\Binaries\SDL2_ttf-2.0.15\include;C:\Library\Binaries\SDL2-2.0.10\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Library\Binaries\opencv-4.1.2\lib\$(PlatformShortName);C:\Library\Binaries\SDL2-2.0.10\lib\$(PlatformShortName);C:\Library\Binaries\SDL2_image-2.0.5\lib\$(PlatformShortName);C:\Library\Binaries\SDL2_ttf-2.0.15\lib\$(PlatformShortName);C:\Program Files %28x86%29\IntelSWTools\compilers_and_libraries\windows\tbb\lib\intel64_win\vc14;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SourcePath)</SourcePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -126,8 +126,11 @@
       <SubSystem>Console</SubSystem>
     </Link>
     <PostBuildEvent>
-      <Command>copy "C:\SDL2-2.0.10\lib\$(PlatformShortName)\*.dll" "$(OutDir)"
-copy "C:\opencv-4.1.2\$(PlatformShortName)\vc16\bin\*.dll" "$(OutDir)"</Command>
+      <Command>copy "C:\Library\Binaries\SDL2-2.0.10\lib\$(PlatformShortName)\*.dll" "$(OutDir)"
+copy "C:\Library\Binaries\SDL2_ttf-2.0.15\lib\$(PlatformShortName)\*.dll" "$(OutDir)"
+copy "C:\Library\Binaries\SDL2_image-2.0.5\lib\$(PlatformShortName)\*.dll" "$(OutDir)"
+copy "C:\Library\Binaries\opencv-4.1.2\bin\$(PlatformShortName)\*.dll" "$(OutDir)"
+copy "C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\redist\ia32\tbb\vc14\*.dll" "$(OutDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -141,8 +144,11 @@ copy "C:\opencv-4.1.2\$(PlatformShortName)\vc16\bin\*.dll" "$(OutDir)"</Command>
       <SubSystem>Console</SubSystem>
     </Link>
     <PostBuildEvent>
-      <Command>copy "C:\SDL2-2.0.10\lib\$(PlatformShortName)\*.dll" "$(OutDir)"
-copy "C:\opencv-4.1.2\$(PlatformShortName)\vc16\bin\*.dll" "$(OutDir)"</Command>
+      <Command>copy "C:\Library\Binaries\SDL2-2.0.10\lib\$(PlatformShortName)\*.dll" "$(OutDir)"
+copy "C:\Library\Binaries\SDL2_ttf-2.0.15\lib\$(PlatformShortName)\*.dll" "$(OutDir)"
+copy "C:\Library\Binaries\SDL2_image-2.0.5\lib\$(PlatformShortName)\*.dll" "$(OutDir)"
+copy "C:\Library\Binaries\opencv-4.1.2\bin\$(PlatformShortName)\*.dll" "$(OutDir)"
+copy "C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\redist\intel64\tbb\vc14\*.dll" "$(OutDir)"</Command>
     </PostBuildEvent>
     <Bscmake>
       <PreserveSbr>true</PreserveSbr>
@@ -162,8 +168,11 @@ copy "C:\opencv-4.1.2\$(PlatformShortName)\vc16\bin\*.dll" "$(OutDir)"</Command>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <PostBuildEvent>
-      <Command>copy "C:\SDL2-2.0.10\lib\$(PlatformShortName)\*.dll" "$(OutDir)"
-copy "C:\opencv-4.1.2\$(PlatformShortName)\vc16\bin\*.dll" "$(OutDir)"</Command>
+      <Command>copy "C:\Library\Binaries\SDL2-2.0.10\lib\$(PlatformShortName)\*.dll" "$(OutDir)"
+copy "C:\Library\Binaries\SDL2_ttf-2.0.15\lib\$(PlatformShortName)\*.dll" "$(OutDir)"
+copy "C:\Library\Binaries\SDL2_image-2.0.5\lib\$(PlatformShortName)\*.dll" "$(OutDir)"
+copy "C:\Library\Binaries\opencv-4.1.2\bin\$(PlatformShortName)\*.dll" "$(OutDir)"
+copy "C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\redist\ia32\tbb\vc14\*.dll" "$(OutDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -180,8 +189,11 @@ copy "C:\opencv-4.1.2\$(PlatformShortName)\vc16\bin\*.dll" "$(OutDir)"</Command>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <PostBuildEvent>
-      <Command>copy "C:\SDL2-2.0.10\lib\$(PlatformShortName)\*.dll" "$(OutDir)"
-copy "C:\opencv-4.1.2\$(PlatformShortName)\vc16\bin\*.dll" "$(OutDir)"</Command>
+      <Command>copy "C:\Library\Binaries\SDL2-2.0.10\lib\$(PlatformShortName)\*.dll" "$(OutDir)"
+copy "C:\Library\Binaries\SDL2_ttf-2.0.15\lib\$(PlatformShortName)\*.dll" "$(OutDir)"
+copy "C:\Library\Binaries\SDL2_image-2.0.5\lib\$(PlatformShortName)\*.dll" "$(OutDir)"
+copy "C:\Library\Binaries\opencv-4.1.2\bin\$(PlatformShortName)\*.dll" "$(OutDir)"
+copy "C:\Program Files (x86)\IntelSWTools\compilers_and_libraries\windows\redist\intel64\tbb\vc14\*.dll" "$(OutDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

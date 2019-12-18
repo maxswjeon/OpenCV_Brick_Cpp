@@ -1,14 +1,8 @@
-#include "Utils/Logger.h"
+#include "Logger.h"
 
-Logger* Logger::_instance = nullptr;
-
-Logger* Logger::GetInstance()
+Logger& Logger::GetInstance()
 {
-	if (_instance == nullptr)
-	{
-		_instance = new Logger();
-	}
-
+	static Logger _instance;
 	return _instance;
 }
 
@@ -51,11 +45,36 @@ void Logger::SetColor(LogLevel level, LogColor color)
 	_log_color[int(level)] = color;
 }
 
+void Logger::SetColor(LogColor debug, LogColor verbose, LogColor info, LogColor warn, LogColor error)
+{
+	_log_color[int(LogLevel::DEBG)] = debug;
+	_log_color[int(LogLevel::VERB)] = verbose;
+	_log_color[int(LogLevel::INFO)] = info;
+	_log_color[int(LogLevel::WARN)] = warn;
+	_log_color[int(LogLevel::EROR)] = error;
+}
+
+LogLevel Logger::GetLevel() const
+{
+	return _log_level;
+}
+
 Logger::Logger() : _log_color{ LogColor::WHITE }
 {
 	_is_color = false;
+	
+	//Default Color Set
+	SetColor(
+		LogColor::WHITE,
+		LogColor::BLUE,
+		LogColor::GREEN,
+		LogColor::YELLOW,
+		LogColor::RED);
+	
 #ifdef _DEBUG
 	_log_level = LogLevel::DEBG;
+	Debug("_DEBUG was Defined in Compile Time");
+	Debug("Log Level fixed to Debug");
 #else
 	_log_level = LogLevel::INFO;
 #endif

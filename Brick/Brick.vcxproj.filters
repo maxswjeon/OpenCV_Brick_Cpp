@@ -3,114 +3,75 @@
   <ItemGroup>
     <Filter Include="Resources">
       <UniqueIdentifier>{b0fc2c34-ed41-4be3-9e66-0c2612b1f50e}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="Headers">
       <UniqueIdentifier>{2efd40d2-3f8f-4f29-991c-e192ca4313dd}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
     <Filter Include="Sources">
       <UniqueIdentifier>{0760867f-335a-4b16-a970-9ea01f4f428d}</UniqueIdentifier>
-      <Extensions>
-      </Extensions>
-    </Filter>
-    <Filter Include="Headers\Utils">
-      <UniqueIdentifier>{c9accda1-53ea-4e3e-8037-27ba3946113e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Sources\Utils">
-      <UniqueIdentifier>{8753d0eb-e19b-463e-ba26-5ae4096b1fbe}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Headers\Threads">
-      <UniqueIdentifier>{982b34ed-97db-4961-940c-ac972c89f74e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Sources\Threads">
-      <UniqueIdentifier>{4f593fa6-bb81-4dc9-98c0-ce20aadd8764}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Headers\Windows">
-      <UniqueIdentifier>{a37c55e8-6adb-4c92-9df6-8ee6e69b29f5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Sources\Windows">
-      <UniqueIdentifier>{a929e7d4-1289-4d93-889c-67f27e200e88}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Resources\Libraries">
       <UniqueIdentifier>{bfcfad16-1691-4ead-9e3f-35bf52ec4e5a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Headers\Threads\Webcam">
-      <UniqueIdentifier>{20a6366e-8515-48f2-8a29-d6afac9c9bd9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Sources\Threads\Webcam">
-      <UniqueIdentifier>{dcccb44e-953c-470b-a517-b1a54d332aa6}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Utils\Logger.h">
-      <Filter>Headers\Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Game.h">
+    <ClInclude Include="Logger.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="include\Threads\Thread.h">
-      <Filter>Headers\Threads</Filter>
+    <ClInclude Include="Window.h">
+      <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="include\Windows\Window.h">
-      <Filter>Headers\Windows</Filter>
+    <ClInclude Include="ConfigLoader.h">
+      <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="include\Windows\MainWindow.h">
-      <Filter>Headers\Windows</Filter>
+    <ClInclude Include="resource.h">
+      <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="include\Windows\StatsWindow.h">
-      <Filter>Headers\Windows</Filter>
+    <ClInclude Include="Utilities.h">
+      <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="Images.h">
-      <Filter>Headers\Utils</Filter>
+    <ClInclude Include="MainWindow.h">
+      <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="include\Queues\Queue.hpp">
-      <Filter>Headers\Threads</Filter>
+    <ClInclude Include="StatsWindow.h">
+      <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="include\Utils\Queue.hpp">
-      <Filter>Headers\Utils</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Threads\ThreadPool.hpp">
-      <Filter>Headers\Threads</Filter>
-    </ClInclude>
-    <ClInclude Include="Frame.h">
-      <Filter>Headers\Threads\Webcam</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Threads\WebcamThread.h">
-      <Filter>Headers\Threads\Webcam</Filter>
+    <ClInclude Include="EventQueue.h">
+      <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Utils\Logger.cpp">
-      <Filter>Sources\Utils</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Game.cpp">
+    <ClCompile Include="Logger.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="src\Threads\Thread.cpp">
-      <Filter>Sources\Threads</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Windows\Window.cpp">
-      <Filter>Sources\Windows</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Windows\MainWindow.cpp">
-      <Filter>Sources\Windows</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Windows\StatsWindow.cpp">
-      <Filter>Sources\Windows</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Windows\WindowBuilder.cpp">
-      <Filter>Sources\Windows</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Utils\Images.cpp">
-      <Filter>Sources\Utils</Filter>
-    </ClCompile>
-    <ClCompile Include="src\main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="Frame.cpp">
-      <Filter>Sources\Threads\Webcam</Filter>
+    <ClCompile Include="Window.cpp">
+      <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="src\Threads\WebcamThread.cpp">
-      <Filter>Sources\Threads\Webcam</Filter>
+    <ClCompile Include="ConfigLoader.cpp">
+      <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="Utilities.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="StatsWindow.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="EventQueue.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Brick.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

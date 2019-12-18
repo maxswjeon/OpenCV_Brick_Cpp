@@ -1,0 +1,8 @@
+# Game Settings
+Game.Stats = true
+
+Game.Window.Name = OpenCV Brick
+Game.Window.Width = 1280
+Game.Window.Height = 720
+
+Game.Paddle.Width = 10
