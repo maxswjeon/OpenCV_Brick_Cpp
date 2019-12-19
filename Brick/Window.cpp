@@ -7,6 +7,11 @@ Window::Window() : _logger(Logger::GetInstance())
 	_id = 0;
 }
 
+Window::~Window()
+{
+	_thread.join();
+}
+
 Window::Window(const char* title, int width, int height, int x, int y, int renderer, int wflags, int rflags) : _logger(Logger::GetInstance())
 {
 	_window = nullptr;
@@ -30,16 +35,18 @@ Window::Window(const char* title, int width, int height, int x, int y, int rende
 	}
 
 	_id = SDL_GetWindowID(_window);
-
+	
 	EventHandler& event = EventHandler::GetInstance();
 	event.AddWindowHandler([&](SDL_Event e) {
 		switch (e.window.event)
 		{
 		case SDL_WINDOWEVENT_CLOSE:
 			SDL_DestroyWindow(_window);
+			Valid = false;
+			
 			EventHandler& event = EventHandler::GetInstance();
 			event.RemoveWindowHandler(_id);
-			Valid = false;
+			
 			return;
 		}
 		Loop(e);
@@ -47,21 +54,25 @@ Window::Window(const char* title, int width, int height, int x, int y, int rende
 	}, _id);
 
 	_thread = std::thread([&]
-	{
-		auto start = std::chrono::system_clock::now();
-		auto target = start + frame_speed(1);
+		{		
+			while (true) {
+				auto start = std::chrono::system_clock::now();
+				auto target = start + frame_speed(1);
 
-		Update();
+				Update();
 
-		if (std::chrono::system_clock::now() > target)
-		{
-			_logger.Warn("Frame Refresh Rate Low!");
-		}
-		else
-		{
-			std::this_thread::sleep_until(target);
-		}
-	});
+				SDL_RenderPresent(_renderer);
+
+				if (std::chrono::system_clock::now() > target)
+				{
+					_logger.Warn("Frame Refresh Rate Low!");
+				}
+				else
+				{
+					std::this_thread::sleep_until(target);
+				}
+			}
+		});
 	
 	Valid = true;
 }

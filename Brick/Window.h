@@ -13,14 +13,17 @@ public:
 	bool Focused = false;
 	
 	Window();
+	virtual ~Window();
 	
 	Window(const char* title, 
 		int width, int height, 
 		int x = SDL_WINDOWPOS_CENTERED, int y = SDL_WINDOWPOS_CENTERED, 
-		int renderer = -1, int wflags = SDL_WINDOW_HIDDEN, int rflags = SDL_RENDERER_ACCELERATED);
+		int renderer = -1, int wflags = 0, int rflags = SDL_RENDERER_ACCELERATED);
 
 	void Show() const;
 	void Hide() const;
+
+
 	
 protected:
 	Logger& _logger;

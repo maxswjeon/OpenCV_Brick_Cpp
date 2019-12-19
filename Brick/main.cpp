@@ -29,12 +29,12 @@ int main(int argc, char* argv[])
 	}
 
 	logger.Debug("Create MainWindow");
-	MainWindow main_window = MainWindow();
-	if (!main_window.Valid)
+	MainWindow main_window;
+	/*if (!main_window.Valid)
 	{
 		logger.Error("Failed to Create Main Window");
-	}
-	main_window.Show();
+	}*/
+	//main_window.Show();
 	
 	SDL_Event e;
 	EventHandler& event = EventHandler::GetInstance();

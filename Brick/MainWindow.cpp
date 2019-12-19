@@ -16,13 +16,18 @@ int MainWindow::Update()
 {
 	//Check Input
 	//Status
-	//
-	
+	SDL_SetRenderDrawColor(_renderer, 0, 0, 0, SDL_ALPHA_OPAQUE);
+	SDL_RenderClear(_renderer);
+
+	SDL_SetRenderDrawColor(_renderer, 255, 255, 255, SDL_ALPHA_OPAQUE);
+	SDL_RenderDrawLine(_renderer, 320, 200, 300, 240);
+	SDL_RenderDrawLine(_renderer, 300, 240, 340, 240);
+	SDL_RenderDrawLine(_renderer, 340, 240, 320, 200);
 	return 0;
 }
 
 
 int MainWindow::Loop(SDL_Event e)
 {
-	
+	return 0;
 }

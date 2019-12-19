@@ -32,6 +32,7 @@
   <ItemGroup>
     <ClCompile Include="ConfigLoader.cpp" />
     <ClCompile Include="EventHandler.cpp" />
+    <ClCompile Include="Frame.cpp" />
     <ClCompile Include="FrameHandler.cpp" />
     <ClCompile Include="Logger.cpp" />
     <ClCompile Include="main.cpp" />

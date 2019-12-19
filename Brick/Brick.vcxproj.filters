@@ -74,6 +74,9 @@
     <ClCompile Include="FrameHandler.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
+    <ClCompile Include="Frame.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Brick.rc">

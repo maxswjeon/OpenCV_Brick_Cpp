@@ -1,7 +1,28 @@
-# Game Settings
+## Game Settings
 
 Game.Window.Name = OpenCV Brick
 Game.Window.Width = 1280
 Game.Window.Height = 720
 
 Game.Paddle.Width = 10
+
+## OpenCV Settings
+Frame.Capture.Width = 1280
+Frame.Capture.Height = 720
+
+## Recognition Methods
+## HSVRange : HSVRange
+Frame.Recognition.Method = HSVRange
+Frame.Recognition.HSVRange.High.H = 17
+Frame.Recognition.HSVRange.High.S = 5
+Frame.Recognition.HSVRange.High.V = 4
+Frame.Recognition.HSVRange.Low.H = 3
+Frame.Recognition.HSVRange.Low.S = 1
+Frame.Recognition.HSVRange.Low.V = 0
+Frame.Recognition.HSVRange.Full = True
+
+## AdaptiveThresholdG : Adaptive Threshold on G layer
+# Frame.Recognition.Method = AdaptiveThresholdG
+
+## AdaptiveThreshold : Adaptive Threshold by converting to Grayscale
+# Frame.Recognition.Method = AdaptiveThresholdG
