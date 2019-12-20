@@ -9,10 +9,10 @@ MainWindow::MainWindow()
 		SDL_WINDOW_HIDDEN, 
 		SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC)
 {
-	
+	_last_update = std::chrono::system_clock::now();
 }
 
-int MainWindow::Update()
+int MainWindow::Render()
 {
 	//Check Input
 	//Status
@@ -23,6 +23,9 @@ int MainWindow::Update()
 	SDL_RenderDrawLine(_renderer, 320, 200, 300, 240);
 	SDL_RenderDrawLine(_renderer, 300, 240, 340, 240);
 	SDL_RenderDrawLine(_renderer, 340, 240, 320, 200);
+	SDL_RenderPresent(_renderer);
+
+	SDL_Delay(5);
 	return 0;
 }
 

@@ -4,6 +4,8 @@
 #include "Logger.h"
 #include "ConfigLoader.h"
 #include "EventHandler.h"
+#include "RenderPool.h"
+#include "FrameHandler.h"
 
 #include "MainWindow.h"
 #include "StatsWindow.h"
@@ -30,34 +32,61 @@ int main(int argc, char* argv[])
 
 	logger.Debug("Create MainWindow");
 	MainWindow main_window;
-	/*if (!main_window.Valid)
+	if (!main_window.Valid)
 	{
 		logger.Error("Failed to Create Main Window");
-	}*/
-	//main_window.Show();
+	}
 	
 	SDL_Event e;
 	EventHandler& event = EventHandler::GetInstance();
+	RenderPool& render = RenderPool::GetInstance();
+	FrameHandler handler = FrameHandler(0, 8);
+	if (handler.Start())
+	{
+		return 3;
+	}
+
+	main_window.Show();
+	
 	while (true)
 	{
+		logger.Debug("Loop Start");
+		
+		auto time_start = std::chrono::system_clock::now();
+		std::chrono::milliseconds elapsed;
+		
 		if (SDL_PollEvent(&e))
 		{
-			std::chrono::system_clock::time_point start = std::chrono::system_clock::now();
 			event.HandleEvent(e);
-			std::chrono::system_clock::time_point end = std::chrono::system_clock::now();
-			
-			std::chrono::milliseconds elapsed = 
-				std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
-			logger.Debug("Event Handle in %lldms", elapsed.count());
-			if (elapsed.count() > 5)
-			{
-				logger.Warn("Event Process Time Exceeded 5ms");
-			}
-
 			if (e.type == SDL_QUIT){
 				break;
 			}
 		}
+		auto time_event = std::chrono::system_clock::now();
+		
+		render.Render();
+		auto time_render = std::chrono::system_clock::now();
+
+		elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(time_event - time_start);
+		//logger.Debug("Event Handled in %lld ms", elapsed.count());
+		if (elapsed.count() > 5)
+		{
+			logger.Warn("Event Process Time Exceeded 5ms");
+		}
+		
+		elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(time_render - time_event);
+		//logger.Debug("Rendered in %lld ms", elapsed.count());
+		if (elapsed.count() > 20)
+		{
+			logger.Warn("Render Time Exceeded 20ms");
+		}
+
+		elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(time_render - time_start);
+		if (elapsed.count() > 1000 / 30)
+		{
+			logger.Warn("Frame Drop Occured");			
+		}
+
 	}
 
 	SDL_Quit();

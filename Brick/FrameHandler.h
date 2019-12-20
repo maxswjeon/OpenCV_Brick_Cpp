@@ -1,6 +1,7 @@
 #pragma once
 #pragma comment(lib, "opencv_world412.lib")
 
+#include "Logger.h"
 #include "ConfigLoader.h"
 #include "Utilities.h"
 
@@ -33,6 +34,8 @@ enum class FrameTimestamp : int
 class Frame
 {
 private:
+	Logger& _logger;
+	
 	cv::Mat Blur(cv::Mat);
 
 	inline void Timestamp(FrameTimestamp);
@@ -44,20 +47,31 @@ public:
 	
 	std::array<std::chrono::system_clock::time_point, 10> Timestamps;
 
-	Frame() = default;
+	Frame();
 	Frame(cv::Mat, std::chrono::system_clock::time_point time);
 	void Process();
+
+
+	Frame(const Frame& other);
+	Frame(Frame&& other) noexcept;
+	Frame& operator=(const Frame& other);
+	Frame& operator=(Frame&& other) noexcept;
 };
 
 class FrameHandler
 {
+	Logger& _logger;
+	
 	tbb::concurrent_queue<Frame> _queue;
 	
 	std::thread _thread_capture;
 	std::vector<std::thread> _thread_process;
 
+	bool _flag;
+	int _device;
+	
 public:
 	FrameHandler(int device, int pool_size);
-
+	int Start();
 };
 

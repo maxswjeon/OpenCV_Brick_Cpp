@@ -16,66 +16,114 @@
     <Filter Include="Resources\Libraries">
       <UniqueIdentifier>{bfcfad16-1691-4ead-9e3f-35bf52ec4e5a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Headers\Windows">
+      <UniqueIdentifier>{675b68b7-03ab-4707-a035-edcedfc130bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Utils">
+      <UniqueIdentifier>{fc6eba77-815b-4e85-bbe0-413a2a47effc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Sprites">
+      <UniqueIdentifier>{1522d853-6eaf-46f5-a838-5a4acab8354b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Handlers">
+      <UniqueIdentifier>{cb988e64-8d32-4629-bd56-326ba2ce1d82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Sprites">
+      <UniqueIdentifier>{9ba6c809-4695-44da-8969-253a13edb8de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Handlers">
+      <UniqueIdentifier>{a18a4a31-5102-4fdf-af7b-117c7e80ce23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Webcam">
+      <UniqueIdentifier>{8942defd-a636-4fe0-b003-3ece16de7dce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Webcam">
+      <UniqueIdentifier>{321b1edb-40fd-4f05-a01b-273f657cccbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Windows">
+      <UniqueIdentifier>{91b03b3e-6a41-4350-8495-2d78cc53fe3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Utils">
+      <UniqueIdentifier>{c3ea77fc-305f-4531-aa58-7e5b0c87c2db}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Logger.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="Window.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="ConfigLoader.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="Utilities.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="MainWindow.h">
-      <Filter>Headers</Filter>
+    <ClInclude Include="Window.h">
+      <Filter>Headers\Windows</Filter>
     </ClInclude>
     <ClInclude Include="StatsWindow.h">
-      <Filter>Headers</Filter>
+      <Filter>Headers\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWindow.h">
+      <Filter>Headers\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities.h">
+      <Filter>Headers\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Headers\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigLoader.h">
+      <Filter>Headers\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Brick.h">
+      <Filter>Headers\Sprites</Filter>
     </ClInclude>
     <ClInclude Include="EventHandler.h">
-      <Filter>Headers</Filter>
+      <Filter>Headers\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPool.h">
+      <Filter>Headers\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Headers\Sprites</Filter>
     </ClInclude>
     <ClInclude Include="FrameHandler.h">
-      <Filter>Headers</Filter>
+      <Filter>Headers\Webcam</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Logger.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="Window.cpp">
-      <Filter>Sources</Filter>
+    <ClCompile Include="Brick.cpp">
+      <Filter>Sources\Sprites</Filter>
     </ClCompile>
-    <ClCompile Include="ConfigLoader.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Utilities.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="MainWindow.cpp">
-      <Filter>Sources</Filter>
-    </ClCompile>
-    <ClCompile Include="StatsWindow.cpp">
-      <Filter>Sources</Filter>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Sources\Sprites</Filter>
     </ClCompile>
     <ClCompile Include="EventHandler.cpp">
-      <Filter>Sources</Filter>
+      <Filter>Sources\Handlers</Filter>
     </ClCompile>
-    <ClCompile Include="FrameHandler.cpp">
-      <Filter>Sources</Filter>
+    <ClCompile Include="RenderPool.cpp">
+      <Filter>Sources\Handlers</Filter>
     </ClCompile>
     <ClCompile Include="Frame.cpp">
-      <Filter>Sources</Filter>
+      <Filter>Sources\Webcam</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameHandler.cpp">
+      <Filter>Sources\Webcam</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Sources\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="StatsWindow.cpp">
+      <Filter>Sources\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Sources\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities.cpp">
+      <Filter>Sources\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Sources\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigLoader.cpp">
+      <Filter>Sources\Utils</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

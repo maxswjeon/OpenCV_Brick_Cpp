@@ -2,8 +2,9 @@
 #include "EventHandler.h"
 #include "Logger.h"
 
+#include "RenderPool.h"
+
 #include <chrono>
-#include <thread>
 #include <SDL.h>
 
 class Window
@@ -13,7 +14,6 @@ public:
 	bool Focused = false;
 	
 	Window();
-	virtual ~Window();
 	
 	Window(const char* title, 
 		int width, int height, 
@@ -22,21 +22,17 @@ public:
 
 	void Show() const;
 	void Hide() const;
-
-
-	
+		
 protected:
 	Logger& _logger;
 
 	unsigned int _id;
+	int _renderID;
 
 	SDL_Window* _window;
 	SDL_Renderer* _renderer;
 
-	typedef std::chrono::duration<int, std::ratio<1, 30>> frame_speed;
-	std::thread _thread;
-	
-	virtual int Update() = 0;
+	virtual int Render() = 0;
 	virtual int Loop(SDL_Event) = 0;
 };
 

@@ -19,17 +19,21 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Brick.h" />
     <ClInclude Include="ConfigLoader.h" />
     <ClInclude Include="EventHandler.h" />
     <ClInclude Include="FrameHandler.h" />
     <ClInclude Include="Logger.h" />
     <ClInclude Include="MainWindow.h" />
+    <ClInclude Include="RenderPool.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="Sprite.h" />
     <ClInclude Include="StatsWindow.h" />
     <ClInclude Include="Utilities.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Brick.cpp" />
     <ClCompile Include="ConfigLoader.cpp" />
     <ClCompile Include="EventHandler.cpp" />
     <ClCompile Include="Frame.cpp" />
@@ -37,6 +41,8 @@
     <ClCompile Include="Logger.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="RenderPool.cpp" />
+    <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="StatsWindow.cpp" />
     <ClCompile Include="Utilities.cpp" />
     <ClCompile Include="Window.cpp" />

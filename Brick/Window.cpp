@@ -7,11 +7,6 @@ Window::Window() : _logger(Logger::GetInstance())
 	_id = 0;
 }
 
-Window::~Window()
-{
-	_thread.join();
-}
-
 Window::Window(const char* title, int width, int height, int x, int y, int renderer, int wflags, int rflags) : _logger(Logger::GetInstance())
 {
 	_window = nullptr;
@@ -50,30 +45,14 @@ Window::Window(const char* title, int width, int height, int x, int y, int rende
 			return;
 		}
 		Loop(e);
-		SDL_Delay(1);
 	}, _id);
 
-	_thread = std::thread([&]
-		{		
-			while (true) {
-				auto start = std::chrono::system_clock::now();
-				auto target = start + frame_speed(1);
-
-				Update();
-
-				SDL_RenderPresent(_renderer);
-
-				if (std::chrono::system_clock::now() > target)
-				{
-					_logger.Warn("Frame Refresh Rate Low!");
-				}
-				else
-				{
-					std::this_thread::sleep_until(target);
-				}
-			}
+	RenderPool& pool = RenderPool::GetInstance();
+	_renderID = pool.AddWindow([&]()
+		{
+			Render();
 		});
-	
+
 	Valid = true;
 }
 
